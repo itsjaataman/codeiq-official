@@ -1,0 +1,42 @@
+project_id = "gfppdakigmamndilavou"
+
+# Protected routes - require JWT verification
+[functions.daily-recommendation]
+verify_jwt = true
+
+[functions.ai-solver]
+verify_jwt = false
+
+[functions.admin-email]
+verify_jwt = true
+
+[functions.create-teacher]
+verify_jwt = true
+
+# Public routes - auth handled in function code with rate limiting
+[functions.leetcode]
+verify_jwt = false
+
+[functions.signup-otp]
+verify_jwt = false
+
+[functions.forgot-password]
+verify_jwt = false
+
+[functions.send-email]
+verify_jwt = false
+
+[functions.welcome-email]
+verify_jwt = false
+
+[functions.subscription-reminder]
+verify_jwt = false
+
+[functions.cashfree-payment]
+verify_jwt = false
+
+[functions.github-stats]
+verify_jwt = false
+
+[functions.expire-pending-payments]
+verify_jwt = false
